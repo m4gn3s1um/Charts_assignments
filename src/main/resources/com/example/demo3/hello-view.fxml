@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.HelloController">
+   <children>
+      <MFXButton layoutX="25.0" layoutY="560.0" onAction="#visVejr" text="Vejr" />
+      <PieChart fx:id="pieChart2" layoutX="461.0" layoutY="144.0" prefHeight="314.0" prefWidth="431.0" visible="false" />
+      <PieChart fx:id="pieChart1" layoutX="30.0" layoutY="144.0" prefHeight="314.0" prefWidth="431.0" visible="false" />
+      <MFXButton layoutX="25.0" layoutY="520.0" onAction="#visPieChart" text="Lagkage" />
+      <MFXButton layoutX="25.0" layoutY="476.0" onAction="#visBarChart" text="Søjle" />
+      <LineChart fx:id="vejrChart" layoutX="124.0" layoutY="42.0" prefHeight="557.0" prefWidth="733.0" visible="false">
+        <xAxis>
+          <NumberAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <BarChart fx:id="populationBarChart" layoutX="113.0" layoutY="36.0" prefHeight="570.0" prefWidth="764.0" visible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</Pane>
